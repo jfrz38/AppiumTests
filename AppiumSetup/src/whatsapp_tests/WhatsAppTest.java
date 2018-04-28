@@ -35,7 +35,6 @@ public class WhatsAppTest {
 		caps.setCapability("appPackage", "com.whatsapp");
 		caps.setCapability("appActivity", "com.whatsapp.Main");
 		caps.setCapability("noReset", "true");
-		// caps.setCapability("unicodeKeyboard", true);
 
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 	}
