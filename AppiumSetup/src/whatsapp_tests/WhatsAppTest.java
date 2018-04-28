@@ -50,13 +50,6 @@ public class WhatsAppTest {
 		lw.get(0).click();
 		String contactName = driver.findElement(By.id("com.whatsapp:id/conversation_contact_name")).getText();
 		Assert.assertEquals(contactName,"Ramón UAL");
-		
-		/*lw.get(0).click();
-
-		Thread.sleep(5000);
-		driver.findElement(By.id("com.whatsapp:id/entry")).sendKeys("Hola");
-		driver.findElement(By.id("com.whatsapp:id/send")).click();
-		driver.findElement(By.id("com.whatsapp:id/back")).click();*/
 
 		// ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
 
@@ -71,9 +64,9 @@ public class WhatsAppTest {
 		Thread.sleep(5000);
 		List<WebElement> lw = driver.findElements(By.id("com.whatsapp:id/contact_row_container"));
 		lw.get(0).click();
-		lw = driver.findElements(By.id("com.whatsapp:id/message_text"));
 		driver.findElement(By.id("com.whatsapp:id/entry")).sendKeys(mensaje);
 		driver.findElement(By.id("com.whatsapp:id/send")).click();
+		lw = driver.findElements(By.id("com.whatsapp:id/message_text"));
 		Assert.assertEquals(lw.get(lw.size()-1).getText(),mensaje);
 	}
 
