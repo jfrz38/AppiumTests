@@ -39,6 +39,7 @@ public class ConfigurarWhatsAppTest {
 
 	@Test
 	public void whatsAppTestEscribirContacto() throws InterruptedException {
+		// Mock
 		Thread.sleep(5000);
 		Assert.assertEquals(true, true);
 	}
