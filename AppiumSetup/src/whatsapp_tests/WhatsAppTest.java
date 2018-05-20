@@ -59,7 +59,7 @@ public class WhatsAppTest {
 		Assert.assertEquals(contactName, "Fonyou grupo");
 
 		// ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
-
+		
 	}
 
 	@Test

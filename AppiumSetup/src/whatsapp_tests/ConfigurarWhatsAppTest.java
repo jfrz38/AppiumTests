@@ -24,7 +24,7 @@ public class ConfigurarWhatsAppTest {
 		// Set the Desired Capabilities
 
 		DesiredCapabilities caps = new DesiredCapabilities();
-
+		
 		caps.setCapability("deviceName", "hwG7-L01");// Nombre dispositivo
 		caps.setCapability("udid", "f4e3fbea5a03"); // Dispositivo donde ejecutar las pruebas
 		caps.setCapability("platformName", "Android");// OS

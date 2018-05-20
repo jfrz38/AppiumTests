@@ -34,7 +34,7 @@ public class PlayStoreTestEjemplo {
 		caps.setCapability("appPackage", "com.android.vending");// App donde ejecutar las pruebas
 		caps.setCapability("appActivity", "com.android.vending.AssetBrowserActivity");// Método Main de la App
 		caps.setCapability("noReset", "true");
-
+		
 		// Driver con la URL configurada en Appium
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 	}
