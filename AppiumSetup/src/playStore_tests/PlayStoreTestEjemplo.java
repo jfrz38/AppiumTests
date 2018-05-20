@@ -51,6 +51,8 @@ public class PlayStoreTestEjemplo {
 		List<WebElement> lw = driver.findElements(By.id("com.android.vending:id/play_search_container"));
 		// Clickar el resultado
 		lw.get(0).click();
+		List<WebElement> lwr = driver.findElements(By.id("com.android.vending:id/search_results_list"));
+		lwr.get(0).findElement(By.id("com.android.vending:id/li_title")).click();
 		// Guardar el nombre de la App a la que se ha accedido
 		String contactName = driver.findElement(By.id("com.android.vending:id/title_title")).getText();
 		// Comprobar que coincide con la aplicación a la que queríamos acceder
