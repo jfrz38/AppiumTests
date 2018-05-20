@@ -47,7 +47,7 @@ public class WhatsAppTest {
 		// Búsqueda
 		driver.findElement(By.id("com.whatsapp:id/menuitem_search")).click();
 		// Escribir texto en la búsqueda
-		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("fony");
+		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("victor");
 		Thread.sleep(5000);
 		// Coger primer resultado de la búsqueda
 		List<WebElement> lw = driver.findElements(By.id("com.whatsapp:id/contact_row_container"));
@@ -69,7 +69,7 @@ public class WhatsAppTest {
 		String mensaje = "Hola";
 		// Repetir proceso anterior
 		driver.findElement(By.id("com.whatsapp:id/menuitem_search")).click();
-		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("fony");
+		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("victor");
 		Thread.sleep(5000);
 		List<WebElement> lw = driver.findElements(By.id("com.whatsapp:id/contact_row_container"));
 		lw.get(0).click();
