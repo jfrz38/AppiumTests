@@ -56,17 +56,17 @@ public class WhatsAppTest {
 		// Guardar el nombre de contacto al que se ha accedido
 		String contactName = driver.findElement(By.id("com.whatsapp:id/conversation_contact_name")).getText();
 		// Comprobar que coincide con el contacto al que queríamos acceder
-		Assert.assertEquals(contactName, "Fonyou grupo");
+		Assert.assertEquals(contactName, "Víctor UAL");
 
 		// ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
-		
+
 	}
 
 	@Test
 	public void whatsAppTestEscribirContacto() throws InterruptedException {
 
 		// Mensaje a enviar
-		String mensaje = "Hola";
+		String mensaje = "Hola"; // Sin ñ ni tildes
 		// Repetir proceso anterior
 		driver.findElement(By.id("com.whatsapp:id/menuitem_search")).click();
 		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("victor");
