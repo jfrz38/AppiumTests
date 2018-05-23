@@ -30,7 +30,7 @@ public class WhatsAppTest {
 		DesiredCapabilities caps = new DesiredCapabilities();
 
 		caps.setCapability("deviceName", "hwG7-L01");// Nombre dispositivo
-		caps.setCapability("udid", "f4e3fbea5a03"); // Dispositivo donde ejecutar las pruebas
+		caps.setCapability("udid", "f4XXXXXXXXXX"); // Dispositivo donde ejecutar las pruebas
 		caps.setCapability("platformName", "Android");// OS
 		caps.setCapability("platformVersion", "4.4");// Versión
 		caps.setCapability("appPackage", "com.whatsapp");// App donde ejecutar las pruebas
@@ -66,7 +66,7 @@ public class WhatsAppTest {
 	public void whatsAppTestEscribirContacto() throws InterruptedException {
 
 		// Mensaje a enviar
-		String mensaje = "Hola"; // Sin ñ ni tildes
+		String mensaje = "Pole"; // Sin ñ ni tildes
 		// Repetir proceso anterior
 		driver.findElement(By.id("com.whatsapp:id/menuitem_search")).click();
 		driver.findElement(By.id("com.whatsapp:id/search_src_text")).sendKeys("victor");

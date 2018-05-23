@@ -25,8 +25,9 @@ public class ConfigurarWhatsAppTest {
 
 		DesiredCapabilities caps = new DesiredCapabilities();
 
+		// Configuración necesaria para ejecutar los tests
 		caps.setCapability("deviceName", "hwG7-L01");// Nombre dispositivo
-		caps.setCapability("udid", "f4e3fbea5a03"); // Dispositivo donde ejecutar las pruebas
+		caps.setCapability("udid", "f4XXXXXXXXXX"); // Dispositivo donde ejecutar las pruebas
 		caps.setCapability("platformName", "Android");// OS
 		caps.setCapability("platformVersion", "4.4");// Versión
 		caps.setCapability("appPackage", "com.whatsapp");// App donde ejecutar las pruebas
