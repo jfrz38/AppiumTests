@@ -1,2 +1,2 @@
 # AppiumWhatsAppTest
-Test unitarios en WhatsApp utilizando Appium
+Test unitarios en Android utilizando Appium
